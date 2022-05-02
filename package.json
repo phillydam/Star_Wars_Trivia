@@ -1,0 +1,23 @@
+{
+  "name": "star_wars_trivia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillydam/Star_Wars_Trivia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phillydam/Star_Wars_Trivia/issues"
+  },
+  "homepage": "https://github.com/phillydam/Star_Wars_Trivia#readme",
+  "dependencies": {
+    "method-override": "^3.0.0"
+  }
+}
