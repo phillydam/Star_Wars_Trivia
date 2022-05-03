@@ -6,5 +6,22 @@
     {
       "name": "Luke Skywalker",
       "img": "https://lumiere-a.akamaihd.net/v1/images/luke-skywalker-main_fb34a1ff.jpeg?region=131%2C0%2C951%2C536"
+    },
+    {
+      "name": "Princess Leia",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/leia-organa-feature-image_d0f5e953.jpeg?region=0%2C0%2C1280%2C720"
+    },
+    {
+      "name": "Darth Vader",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/Darth-Vader_6bda9114.jpeg?region=0%2C23%2C1400%2C785"
+    },
+    {
+      "name": "Yoda",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/Yoda-Retina_2a7ecc26.jpeg?region=0%2C0%2C1536%2C864"
+    },
+    {
+      "name": "RD-D2",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/r2-d2-main_f315b094.jpeg?region=273%2C0%2C951%2C536"
     }
 ]
+
