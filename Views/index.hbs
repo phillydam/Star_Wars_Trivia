@@ -1,4 +1,3 @@
-<script src="../controllers/controller.js"></script>
 {{#each character}}
 <div class="container d-flex justify-content-center align-items-center">
     
@@ -10,16 +9,18 @@
         
 
         <div class="d-flex-column">
-        {{!-- {{#if name}} --}}
+        {{#if name}}
         <label for="name"></label>
         <input type="text" name="name" id="name" class="form-control" style="width: 400px;" placeholder="Guess The Character">
         </div>
         <div class="d-flex-column">
         <input type="submit" name="name" id="name" class="btn btn-primary submit submitButton">
-        {{submitButton}}
-        {{!-- {{else name}} --}}
-            {{!-- <h1>WRONG</h1> --}}
-        {{!-- {{/if}} --}}
+        {{answerSubmit}}
+
+        
+        {{else name}}
+            <h1>WRONG</h1>
+        {{/if}}
         </div>
        
 

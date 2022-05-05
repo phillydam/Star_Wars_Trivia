@@ -13,6 +13,14 @@
         <header class="header text-center bg-primary">
             <h1>STAR WARS TRIVIA</h1>
         </header>
+
+        <% charactersArray.forEach(name => { %>
+        <div class="container character">
+            <h3><% characters.name %></h3>
+            <div class="image">
+                <img src="<% character.img %>" alt="">
+            </div>
+        </div>
         
         <div class="column">
             <div class="container d-flex justify-content-center align-items-center flex-column">
@@ -38,7 +46,9 @@
             </form>
 
         </div>
+        <% }) %>
     </div>
+    
     
 </body>
 </html>

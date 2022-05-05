@@ -16,19 +16,11 @@ router.get('/startgame', (req, res) => {
     res.render('startGame')
 })
 
-// router.get('/character', (req, res) => {
-//     Character.find({ name: req.params.name}, function(err, characters){
-//         res.render('index', {
-//             charactersArray: characters
-//         })
-//     })
-// })
-
 router.get('/character', (req, res) => {
-    Character.find({})
-    .then(character => {
-        
-        res.render('index', {character})
+    Character.find({ name: req.params.name}, function(err, characters){
+        res.render('index', {
+            charactersArray: characters
+        })
     })
 })
 
@@ -53,30 +45,19 @@ Make a function that alerts Correct
 Make a function that alerts Wrong
 Then use them in the HBS
 */
-// Handlebars.registerHelper('submitAnswer', function(answer){
-//     const html = '<form>'
-//     answer.forEach(function(name) {
-//         html +=
-//     })
-// })
 
 function answerSubmit(){
     if(character.params.name = true){
-        alert('Correct!')
+        window.alert('Correct!')
     }else{
-        alert('Wrong')
+        windoow.alert('Wrong')
     }
 }
 
-
-
-// const submitButton = document.getElementById("submit").innerHTML;
+// const submitButton = document.querySelector('.submit')
 // const handlebars = Handlebars.compile(submitButton)
-// // document.body.innerHTML = submitButton
+// document.body.innerHTML = submitButton
 
-// const submitAnswer = correctAnswer () => {
-//     if
-// }
 
 
 module.exports = router
