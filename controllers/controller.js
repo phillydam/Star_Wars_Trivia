@@ -4,6 +4,8 @@ const res = require('express/lib/response')
 const router = express.Router()
 const Character = require('../models/character-model')
 const app = express()
+const Handlebars = require('hbs')
+
 
 //setup routes
 router.get('/', (req, res) => {
@@ -15,8 +17,16 @@ router.get('/startgame', (req, res) => {
 })
 
 router.get('/character', (req, res) => {
+    function answerSubmit(){
+        if(character.params.name = true){
+            window.alert('Correct!')
+        }else{
+            windoow.alert('Wrong')
+        }
+    }
     Character.find({})
     .then(character => {
+        
         res.render('index', {character})
     })
 })
@@ -37,6 +47,24 @@ router.get('/character/:id', (req, res) => {
 })
 
 //cycle through characters
+/* 
+Make a function that alerts Correct
+Make a function that alerts Wrong
+Then use them in the HBS
+*/
+
+function answerSubmit(){
+    if(character.params.name = true){
+        window.alert('Correct!')
+    }else{
+        windoow.alert('Wrong')
+    }
+}
+
+// const submitButton = document.querySelector('.submit')
+// const handlebars = Handlebars.compile(submitButton)
+// document.body.innerHTML = submitButton
+
 
 
 module.exports = router

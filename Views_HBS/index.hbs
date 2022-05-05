@@ -1,0 +1,30 @@
+<script src="../controllers/controller.js"></script>
+{{#each character}}
+<div class="container d-flex justify-content-center align-items-center">
+    
+    <form action="/character" method="get" class="d-flex-column align-items-center justify-content-center">
+        
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+        <img src="{{this.img}}" alt="" width="800">
+        </div>     
+        
+
+        <div class="d-flex-column">
+        {{!-- {{#if name}} --}}
+        <label for="name"></label>
+        <input type="text" name="name" id="name" class="form-control" style="width: 400px;" placeholder="Guess The Character">
+        </div>
+        <div class="d-flex-column">
+        <input type="submit" name="name" id="name" class="btn btn-primary submit submitButton">
+        {{submitButton}}
+        {{!-- {{else name}} --}}
+            {{!-- <h1>WRONG</h1> --}}
+        {{!-- {{/if}} --}}
+        </div>
+       
+
+        
+    </form>
+
+</div>
+{{/each}}
